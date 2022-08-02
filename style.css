@@ -154,6 +154,9 @@ input{
 input:focus{
   outline: 2px solid rgb(62, 173, 247);
 }
+input:invalid{
+  outline: 1px solid red;
+}
 label{
   text-transform: uppercase;
   font-size: .7em;
