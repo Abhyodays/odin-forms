@@ -1,0 +1,184 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+html,
+body {
+  min-height: 100vh;
+}
+body{
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+  font-family: 'norse';
+  src: url('fonts/Norse-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Custom styling */
+.container{
+  min-width: 620px;
+  display: grid;
+  grid-template-columns: .70fr 1.3fr;
+}
+em{
+  font-style: italic;
+}
+/* left section */
+.brand{
+  margin: 30% 0 auto 0;
+  height: 93px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+  opacity: .6;
+  font-family: 'norse',sans-serif;
+  font-size: 5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile{
+  display: flex;
+  height: 100vh;
+  background: url('images/cole-keister-nfxIvG2B62I-unsplash.jpg') no-repeat 0 0;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  color:#fff;
+}
+.logo{
+  height: 90px;
+  width: 80px;
+}
+.credit{
+  position: absolute;
+  inset: auto auto 20px auto;
+  font-size: .725rem;
+  font-family: sans-serif;
+}
+.credit a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Right section */
+.form-container{
+  background-color: #fff;
+  width: 100%;
+  padding-top: 5em;
+}
+form{
+  box-shadow: 0 2px 4px rgb(176, 176, 176);
+  padding: 0 1.25em 1em 1.25em;
+}
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 40px;
+}
+.form-header{
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+h1{
+  color: rgb(37, 37, 37);
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.ip{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+}
+input{
+  border: 1.5px solid #E5E7EB;
+  border-radius: 5px;
+}
+input:focus{
+  outline: 2px solid rgb(62, 173, 247);
+}
+label{
+  text-transform: uppercase;
+  font-size: .7em;
+  font-family: sans-serif;
+  color: rgb(140, 140, 140);
+  padding-bottom: 2px;
+}
+
+.btn-sec{
+  padding: 1em 1.25em 0 1.25em;
+  background-color: rgba(255, 255, 255, 0.628);
+  font-family: sans-serif;
+  font-size: .9rem;
+}
+button{
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #596D48;
+  width: 12rem;
+  height: 1.725rem;
+  margin-bottom: 10px;
+}
+.btn-sec a{
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
